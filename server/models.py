@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Tag(models.Model):
-    serial_number = models.CharField(max_length=3)
+    serial_number = models.PositiveIntegerField()
     tag_id = models.CharField(max_length=15)
     assigned = models.BooleanField(default=False)
 
