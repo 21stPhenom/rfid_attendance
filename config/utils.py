@@ -29,8 +29,7 @@ def tag_exists(tag_id: str):
 	return (queryset, exists)
 
 def check_tags():
-	print('Ready to scan tags...')
+	# print('Ready to scan tags...')
 	tag_id = get_tag_id()
 	queryset, tag_in_db = tag_exists(tag_id)
-
-
+	return (queryset, tag_in_db)
